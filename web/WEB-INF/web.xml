@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" version="2.4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http:/java.sun.com/dtd/web-app_2_3.dtd">
+    <!-- list servlet -->
+    <servlet>
+        <servlet-name>list</servlet-name>
+        <servlet-class>servlet.ListNotes</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>list</servlet-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </servlet-mapping>
+    
+    <!-- addOut servlet -->
+    <servlet>
+        <servlet-name>addOut</servlet-name>
+        <servlet-class>servlet.AddNote</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addOut</servlet-name>
+        <url-pattern>/addOut</url-pattern>
+    </servlet-mapping>
+    
+    <!-- addBD servlet -->
+    <servlet>
+        <servlet-name>addBD</servlet-name>
+        <servlet-class>servlet.AddNoteBD</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addBD</servlet-name>
+        <url-pattern>/addNote</url-pattern>
+    </servlet-mapping>
+    
+    <!-- delBD servlet -->
+    <servlet>
+        <servlet-name>delBD</servlet-name>
+        <servlet-class>servlet.DeleteNote</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delBD</servlet-name>
+        <url-pattern>/deleteNote</url-pattern>
+    </servlet-mapping>
+    
+    <!-- search servlet -->
+    <servlet>
+        <servlet-name>search</servlet-name>
+        <servlet-class>servlet.SearchNote</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>search</servlet-name>
+        <url-pattern>/searchNote</url-pattern>
+    </servlet-mapping>
+</web-app>
